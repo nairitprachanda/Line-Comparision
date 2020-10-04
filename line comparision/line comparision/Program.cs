@@ -32,8 +32,10 @@ namespace line_comparision
             if (length1 == length2)
 
                 Console.WriteLine("Lines are of EQUAL length");
+            else if (length1.CompareTo(length2) > 0)
+                Console.WriteLine("Line 1 is longer than line 2");
             else
-                Console.WriteLine("Lines are of NOT EQUAL length");
+                Console.WriteLine("Line 2 is longer than line 1");
 
         }
     }
